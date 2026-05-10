@@ -9,6 +9,7 @@ import { ProjectCard } from "./components/ProjectCard";
 import { ExperienceCard } from "./components/ExperienceCard";
 import { TechBadge } from "./components/TechBadge";
 import weddingImg from "@/assets/Wedding.png";
+import resumePdf from "@/assets/Mohammed_Sameer_Rangrej_Resume.pdf";
 
 export default function App() {
   const scrollToSection = (id: string) => {
@@ -82,14 +83,17 @@ export default function App() {
 
                     {/* CTA Buttons */}
                     <div className="flex flex-wrap gap-3 lg:gap-4">
-                      <motion.button
+                      <motion.a
+                        href={resumePdf}
+                        download="Mohammed_Sameer_Rangrej_Resume.pdf"
+                        target="_blank"
                         whileHover={{ scale: 1.05, boxShadow: "0 10px 30px rgba(201, 150, 91, 0.4)" }}
                         whileTap={{ scale: 0.95 }}
-                        className="px-6 lg:px-8 py-3 lg:py-4 bg-gradient-to-r from-[#c9965b] to-[#d8a56a] text-white rounded-xl font-medium shadow-lg flex items-center gap-2 text-sm lg:text-base"
+                        className="px-6 lg:px-8 py-3 lg:py-4 bg-gradient-to-r from-[#c9965b] to-[#d8a56a] text-white rounded-xl font-medium shadow-lg flex items-center gap-2 text-sm lg:text-base cursor-pointer"
                       >
                         <Download size={18} className="lg:w-5 lg:h-5" />
                         Download Resume
-                      </motion.button>
+                      </motion.a>
 
                       <motion.button
                         whileHover={{ scale: 1.05 }}
