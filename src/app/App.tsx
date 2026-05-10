@@ -185,7 +185,7 @@ export default function App() {
                       Key Concepts
                     </h3>
                     <div className="flex flex-wrap gap-2">
-                      {["JWT Authentication", "Protected Routes"].map((skill) => (
+                      {["JWT Authentication", "Protected Routes", "Context API", "Redux", "RBAC"].map((skill) => (
                         <TechBadge key={skill} name={skill} variant="gold" />
                       ))}
                     </div>
