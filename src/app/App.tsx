@@ -8,6 +8,7 @@ import { SectionTitle } from "./components/SectionTitle";
 import { ProjectCard } from "./components/ProjectCard";
 import { ExperienceCard } from "./components/ExperienceCard";
 import { TechBadge } from "./components/TechBadge";
+import weddingImg from "@/assets/Wedding.png";
 
 export default function App() {
   const scrollToSection = (id: string) => {
@@ -240,7 +241,7 @@ export default function App() {
                     status="Currently developing admin dashboard and API integrations"
                     githubUrl="https://github.com/Sammy6543/Wedding"
                     liveUrl="https://wedding-sepia-ten.vercel.app/"
-                    imageUrl="/src/assets/Wedding.png"
+                    imageUrl={weddingImg}
                   />
                 </div>
               </AnimatedWrapper>

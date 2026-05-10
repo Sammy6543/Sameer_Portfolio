@@ -3,6 +3,7 @@ import { Mail, Phone, MapPin } from "lucide-react";
 import { SocialLinks } from "./SocialLinks";
 import { SkillBar } from "./SkillBar";
 import { TechBadge } from "./TechBadge";
+import profileImg from "@/assets/Profile.jpg";
 
 export function Sidebar() {
   const skills = [
@@ -34,7 +35,7 @@ export function Sidebar() {
         <div className="mb-4 lg:mb-6 flex justify-center">
           <div className="w-32 h-32 lg:w-40 lg:h-40 rounded-full bg-white/20 backdrop-blur-sm border-4 border-white/30 flex items-center justify-center overflow-hidden">
             <img 
-              src="/src/assets/Profile.jpg" 
+              src={profileImg} 
               alt="Mohammed Sameer Rangrej" 
               className="w-full h-full object-cover"
             />

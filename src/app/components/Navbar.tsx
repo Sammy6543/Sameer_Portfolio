@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion } from "motion/react";
 import { Menu, X } from "lucide-react";
+import logo from "@/assets/Logo.png";
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -80,7 +81,7 @@ export function Navbar() {
               className="cursor-pointer"
               onClick={() => scrollToSection("home")}
             >
-              <img src="/src/assets/Logo.png" alt="MSR Logo" className="h-8 w-auto" />
+              <img src={logo} alt="MSR Logo" className="h-8 w-auto" />
             </motion.div>
 
             {/* Desktop Nav */}
