@@ -9,6 +9,7 @@ import { ProjectCard } from "./components/ProjectCard";
 import { ExperienceCard } from "./components/ExperienceCard";
 import { TechBadge } from "./components/TechBadge";
 import weddingImg from "@/assets/Wedding.png";
+import aiRasoiImg from "@/assets/ai-rasoi.png";
 import resumePdf from "@/assets/Mohammed_Sameer_Rangrej_Resume.pdf";
 
 export default function App() {
@@ -246,6 +247,23 @@ export default function App() {
                     githubUrl="https://github.com/Sammy6543/Wedding"
                     liveUrl="https://wedding-sepia-ten.vercel.app/"
                     imageUrl={weddingImg}
+                  />
+
+                  <ProjectCard
+                    title="AI Rasoi"
+                    description="A modern AI-powered recipe platform that helps users discover recipes, generate personalized meals, analyze nutrition, and save favorites in a seamless app-like experience."
+                    technologies={["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion", "Supabase", "OpenRouter API", "Spoonacular API"]}
+                    features={[
+                      "AI recipe generation from ingredients and preferences",
+                      "Nutrition analysis with calories and macros",
+                      "Secure Google authentication and protected accounts",
+                      "Personal favorites collection and recipe management",
+                      "Responsive PWA experience with smooth animations",
+                      "Smart discovery with categories and search"
+                    ]}
+                    status="Live and available for users"
+                    liveUrl="https://ai-rasoi-cook-smarter-with-ai.vercel.app/"
+                    imageUrl={aiRasoiImg}
                   />
                 </div>
               </AnimatedWrapper>
