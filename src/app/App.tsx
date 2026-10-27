@@ -322,32 +322,59 @@ export default function App() {
 
             {/* Education Section */}
             <section>
-              <AnimatedWrapper>
-                <SectionTitle title="Education" />
-                <motion.div
-                  whileHover={{ x: 5 }}
-                  className="bg-white rounded-xl p-6 shadow-lg border-l-4 border-[#c9965b]"
-                >
-                  <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 bg-gradient-to-br from-[#c9965b] to-[#d8a56a] rounded-lg flex items-center justify-center flex-shrink-0">
-                      <GraduationCap className="text-white" size={24} />
-                    </div>
-                    <div className="flex-grow">
-                      <h3 className="text-xl font-bold text-[#2b2b2b] mb-2">
-                        Bachelor of Technology in Computer Science
-                      </h3>
-                      <p className="text-[#c9965b] font-medium mb-2">
-                        Arya College of Engineering & IT, Jaipur
-                      </p>
-                      <p className="text-sm text-[#6b6b6b] mb-2">2019 – 2023</p>
-                      <div className="inline-block px-4 py-2 bg-[#f5f1eb] rounded-lg">
-                        <span className="text-sm font-semibold text-[#2b2b2b]">CGPA: 7.77</span>
-                      </div>
-                    </div>
-                  </div>
-                </motion.div>
-              </AnimatedWrapper>
-            </section>
+  <AnimatedWrapper>
+    <SectionTitle title="Education" />
+    <div className="space-y-6">
+      {/* PGCP-AC at C-DAC */}
+      <motion.div
+        whileHover={{ x: 5 }}
+        className="bg-white rounded-xl p-6 shadow-lg border-l-4 border-[#c9965b]"
+      >
+        <div className="flex items-start gap-4">
+          <div className="w-12 h-12 bg-gradient-to-br from-[#c9965b] to-[#d8a56a] rounded-lg flex items-center justify-center flex-shrink-0">
+            <GraduationCap className="text-white" size={24} />
+          </div>
+          <div className="flex-grow">
+            <h3 className="text-xl font-bold text-[#2b2b2b] mb-2">
+              PGCP-AC (Post Graduate Certificate Programme in Advanced Computing)
+            </h3>
+            <p className="text-[#c9965b] font-medium mb-2">
+              Centre for Development of Advanced Computing (C-DAC), Kharghar, Navi Mumbai
+            </p>
+            <p className="text-sm text-[#6b6b6b] mb-2">Aug 2026 – Present</p>
+            <div className="inline-block px-4 py-2 bg-[#f5f1eb] rounded-lg">
+              <span className="text-sm font-semibold text-[#2b2b2b]">Pursuing</span>
+            </div>
+          </div>
+        </div>
+      </motion.div>
+
+      {/* B.Tech */}
+      <motion.div
+        whileHover={{ x: 5 }}
+        className="bg-white rounded-xl p-6 shadow-lg border-l-4 border-[#c9965b]"
+      >
+        <div className="flex items-start gap-4">
+          <div className="w-12 h-12 bg-gradient-to-br from-[#c9965b] to-[#d8a56a] rounded-lg flex items-center justify-center flex-shrink-0">
+            <GraduationCap className="text-white" size={24} />
+          </div>
+          <div className="flex-grow">
+            <h3 className="text-xl font-bold text-[#2b2b2b] mb-2">
+              Bachelor of Technology in Computer Science
+            </h3>
+            <p className="text-[#c9965b] font-medium mb-2">
+              Arya College of Engineering &amp; IT, Jaipur
+            </p>
+            <p className="text-sm text-[#6b6b6b] mb-2">2019 – 2023</p>
+            <div className="inline-block px-4 py-2 bg-[#f5f1eb] rounded-lg">
+              <span className="text-sm font-semibold text-[#2b2b2b]">CGPA: 7.77</span>
+            </div>
+          </div>
+        </div>
+      </motion.div>
+    </div>
+  </AnimatedWrapper>
+</section>
 
             {/* Contact Section */}
             <section id="contact">
